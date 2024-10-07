@@ -19,7 +19,7 @@ def pascal_triangle(n):
                         pascal_triangle[i-1][j-1]
                 )
                 rightupper = (
-                        0 if i-1 < 0 or j > len(pascal_triangle[i - 1]) else
+                        0 if i-1 < 0 or j >= len(pascal_triangle[i - 1]) else
                         pascal_triangle[i - 1][j]
                 )
                 row.append.append(leftupper + rightupper)
