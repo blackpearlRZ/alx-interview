@@ -2,14 +2,16 @@
 """ this module defines the function pascal_triangle
 which prints a pascal triangle
 """
+
+
 def pascal_triangle(n):
     """this function returns a liste of integers representing
     the pascal's triangle of n row
     """
     pascal_triangle = []
-    for i in range(n):
+    for i in range(n) :
         row = []
-        for j in range(i + 1):
+        for j in range(i + 1) :
             if i == 0 :
                 row.append(1)
                 continue
