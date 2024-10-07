@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """ this module defines the function pascal_triangle
 which prints a pascal triangle
 """
