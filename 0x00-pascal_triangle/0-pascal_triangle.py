@@ -9,13 +9,13 @@ def pascal_triangle(n):
     the pascal's triangle of n row
     """
     pascal_triangle = []
-    for i in range(n) :
+    for i in range(n):
         row = []
-        for j in range(i + 1) :
-            if i == 0 :
+        for j in range(i + 1):
+            if i == 0:
                 row.append(1)
                 continue
-            else :
+            else:
                 leftupper = (
                         0 if i-1 < 0 or j-1 < 0 else
                         pascal_triangle[i-1][j-1]
