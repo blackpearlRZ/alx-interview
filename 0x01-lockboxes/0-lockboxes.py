@@ -14,12 +14,15 @@ def canUnlockAll(boxes):
         False - if not all boxes can be unlocked.
     """
 
+    # Opening first box
     openedBoxes = [0]
 
+    # Adding keys in first box to key roster
     keys = []
     for key in boxes[@]:
         keys.append(key)
 
+    # Append keys and add opened boxes
     while keys:
         key = keys.pop()
         if key < len(boxes):
@@ -28,6 +31,7 @@ def canUnlockAll(boxes):
                 for newKey in boxes[key]:
                     keys.append(newKey)
 
+    # Compare lens of opned boxes to the boxes
     if (len(boxes) == len(openedBoxes)):
         return True
     else:
