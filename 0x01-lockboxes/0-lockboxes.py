@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Thid module defines the canUnlockAll function
+"""This module defines the canUnlockAll function
 """
 
 
 def canUnlockAll(boxes):
     """ this function defines the solution for the lockboxes
-    ech interview problem
-    Arges;
+    each interview problem
+    Args;
         boxes (list): List of lists representing a box with each
-        box conaining keys.
+        box containing keys.
     Returns:
         True - if all boxes can be unlocked.
         False - if not all boxes can be unlocked.
@@ -19,7 +19,7 @@ def canUnlockAll(boxes):
 
     # Adding keys in first box to key roster
     keys = []
-    for key in boxes[@]:
+    for key in boxes[0]:
         keys.append(key)
 
     # Append keys and add opened boxes
@@ -31,7 +31,7 @@ def canUnlockAll(boxes):
                 for newKey in boxes[key]:
                     keys.append(newKey)
 
-    # Compare lens of opned boxes to the boxes
+    # Compare lens of opened boxes to the boxes
     if (len(boxes) == len(openedBoxes)):
         return True
     else:
