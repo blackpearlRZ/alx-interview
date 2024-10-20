@@ -3,7 +3,7 @@
 """
 
 
-def min_operations(n):
+def minOperations(n):
     """ this function returns the fewest number of operations required
         to create n * 'H' characters . the only allowed operations are:
         copy all & Paste
