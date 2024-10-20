@@ -11,7 +11,7 @@ def minOperations(n):
     if (n<= 1):
         return 0
     num = n
-    division = []
+    divisions = []
     i = 2
     while  i <= num:
         if num % i == 0:
